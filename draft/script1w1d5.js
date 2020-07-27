@@ -1,3 +1,8 @@
+var kalimat4 = 'Sanbercode';
+var contohKataPertama4 = kalimat4.substring(6, 10);
+alert(contohKataPertama4);
+
+
 var items = [
     ['001', 'Keyboard Logitek', 60000, 'Keyboard yang mantap untuk kantoran', 'logitek.jpeg'],
     ['002', 'Keyboard MSI', 300000, 'Keyboard gaming MSI mekanik', 'msi.jpeg'],
@@ -48,3 +53,4 @@ for (let i = 0; i < items.length; i++) {
         cartBtn.lastChild.nodeValue = "("+num+")";
     });
 }
+
