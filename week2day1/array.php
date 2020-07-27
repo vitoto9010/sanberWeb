@@ -19,9 +19,13 @@
         */
         $kids = array("Mike", "Dustin", "Will", "Lucas", "Max", "Eleven"); // Lengkapi di sini
         $adults = array("Hopper", "Nancy",  "Joyce", "Jonathan", "Murray");
+        echo "<pre>";
         print_r($kids);
         echo "<br>";
         print_r($adults) ;
+        echo "</pre>";
+
+        
         echo "<h3> Soal 2</h3>";
         /* 
             SOAL NO 2
@@ -80,6 +84,8 @@
             
         */
 
+        echo "<h3> Soal 3 </h3>";
+
         $peran1 = [
             "Name" => "Will Byers",
             "Age" => 12,
@@ -107,7 +113,7 @@
             "Aliases" => "El",
             "Status" => "Alive"
         ];
-
+        echo "<pre>";
         print_r($peran1);
         echo "<br>";
         print_r($peran2);
@@ -116,6 +122,7 @@
         echo "<br>";
         print_r($peran4);
         echo "<br>";
+        echo "</pre>";
     ?>
 </body>
 </html>
