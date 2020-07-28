@@ -90,6 +90,7 @@
             Array ( [id] => 004 [name] => Mouse Jerry [price] => 30000 [description] => Mouse yang disukai kucing [source] => jerry.jpeg ) 
 
         */
+        
         $items = [
             ['001', 'Keyboard Logitek', 60000, 'Keyboard yang mantap untuk kantoran', 'logitek.jpeg'], 
             ['002', 'Keyboard MSI', 300000, 'Keyboard gaming MSI mekanik', 'msi.jpeg'],
@@ -97,43 +98,16 @@
             ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
         ];
 
-        $items_assoc = [
-            [
-                "id" => '001',
-                "name" => 'Keyboard Logitek', 
-                "price" => 60000, 
-                "description" =>'Keyboard yang mantap untuk kantoran', 
-                "source" =>'logitek.jpeg'
-                ], 
-            [
-                "id" => '002',
-                "name" => 'Keyboard MSI',
-                "price" => 300000,
-                "description" => 'Keyboard gaming MSI mekanik',
-                "source" => 'msi.jpeg'
-                ],
-            [
-                "id" =>'003',
-                "name" => 'Mouse Genius',
-                "price" => 50000,
-                "description" => 'Mouse Genius biar lebih pinter',
-                "source" => 'genius.jpeg'
-                ],
-            [
-                "id" =>'004',
-                "name" =>'Mouse Jerry',
-                "price" => 30000,
-                "description" => 'Mouse yang disukai kucing',
-                "source" => 'jerry.jpeg'
-                   ]
-        ];
-        
+        foreach ($items as $index => $value) {
+            $items_assoc[$index]["id"] = $value[0];
+            $items_assoc[$index]["name"] = $value[1];
+            $items_assoc[$index]["price"] = $value[2];
+            $items_assoc[$index]["description"] = $value[3];
+            $items_assoc[$index]["source"] = $value[4];
+        }
         // Output:
         echo "<pre>";
-        for ($i=0; $i < count($items_assoc); $i++) { 
-            print_r($items_assoc[$i]) ;
-            echo "<br>";
-        }
+        print_r($items_assoc);
         echo "</pre>";
         
         echo "<h3>Soal No 4 Asterix </h3>";
