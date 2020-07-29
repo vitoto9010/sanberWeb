@@ -54,7 +54,7 @@
         echo "String: \"$string3\" "; 
         // OUTPUT : "PHP is old but awesome"
         echo "<br>";
-        $string4 = substr_replace($string3, "awesome", -5);
+        $string4 = str_replace("sexy", "awesome", $string3);
         echo $string4;
 
     ?>
