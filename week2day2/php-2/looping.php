@@ -108,7 +108,6 @@
         // Output:
         echo "<pre>";
         print_r($items_assoc);
-        print_r($items_assoc);
         echo "</pre>";
         
         echo "<h3>Soal No 4 Asterix </h3>";
