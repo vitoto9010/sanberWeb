@@ -15,6 +15,10 @@ class Animal
         echo $this->legs;
     }
 
+    public function setLegs($input)
+    {
+        $this->legs = $input;
+    }
     public function getCold_blooded ()
     {
         if ($this->cold_blooded) {
