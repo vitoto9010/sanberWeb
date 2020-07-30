@@ -16,10 +16,14 @@ echo "<br>";
 
 $sungokong = new Ape("kera sakti");
 $sungokong->yell(); // "Auooo"
+//$sungokong->getLegs();
+//echo $sungokong->name;
 echo "<br>";
 
 $kodok = new Frog("buduk");
 $kodok->jump(); // "hop hop"
+//$kodok->getLegs();
+//echo $kodok->name;
 echo "<br>";
 
 ?>
