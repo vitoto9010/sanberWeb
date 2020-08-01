@@ -24,9 +24,9 @@
         $first_sentence = "Hello PHP!" ; // Panjang string 10, jumlah kata: 2
         $second_sentence = "I'm ready for the challenges"; // Panjang string: 28,  jumlah kata:
         echo $first_sentence."<br>";
-        echo "Panjang String Pertama ".str_word_count($first_sentence).", jumlah kata: ".strlen($first_sentence)."<br>";
+        echo "Panjang String Pertama ".strlen($first_sentence).", jumlah kata: ".str_word_count($first_sentence)."<br>";
         echo $second_sentence."<br>";
-        echo "Panjang String Kedua ".str_word_count($second_sentence).", jumlah kata: ".strlen($second_sentence)."<br>";
+        echo "Panjang String Kedua ".strlen($second_sentence).", jumlah kata: ".str_word_count($second_sentence)."<br>";
          
 
         
