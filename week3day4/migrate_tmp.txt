@@ -1,0 +1,20 @@
+php artisan make:migration create_profil_table
+php artisan make:migration create_pertanyaan_table
+php artisan make:migration create_jawaban_table
+php artisan make:migration create_komentar_pertanyaan_table
+php artisan make:migration create_komentar_jawaban_table
+php artisan make:migration create_like_dislike_pertanyaan_table
+php artisan make:migration create_like_dislike_jawaban_table
+
+
+php artisan make:migration add_user_id_to_posts
+
+
+php artisan make:migration add_fk_pertanyaan_table
+php artisan make:migration add_fk_jawaban_table
+
+php artisan make:migration add_fk_komentar_pertanyaan_table --table=komentar_pertanyaan
+php artisan make:migration add_fk_komentar_jawaban_table --table=komentar_jawaban
+
+php artisan make:migration add_fk_like_dislike_pertanyaan_table --table=like_dislike_pertanyaan
+php artisan make:migration add_fk_like_dislike_jawaban_table --table=like_dislike_jawaban

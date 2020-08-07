@@ -16,8 +16,8 @@ class CreateJawabanTable extends Migration
         Schema::create('jawaban', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('isi', 255);
-            $table->date('tanggal_dibuat');
-            $table->date('tanggal_diperbaharui');
+            $table->timestamp('tanggal_dibuat')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('tanggal_diperbaharui')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 
