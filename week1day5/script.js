@@ -20,7 +20,6 @@
                 </div>
             </div>
             `;
-
         }
         document.getElementById("listBarang").innerHTML = output
 
